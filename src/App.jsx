@@ -3,7 +3,9 @@ import "./App.css"
 import MyNav from "./components/MyNav.jsx"
 import MyFooter from "./components/MyFooter.jsx"
 import Welcome from "./components/Welcome.jsx"
-import AllTheBooks from "./components/AllTheBooks.jsx"
+// import AllTheBooks from "./components/AllTheBooks.jsx"
+import BookList from "./components/BookList.jsx"
+import fantasy from "../src/data/books/fantasy.json"
 
 function App() {
   return (
@@ -11,7 +13,7 @@ function App() {
       <MyNav />
       <main className='container'>
         <Welcome />
-        <AllTheBooks />
+        <BookList category={fantasy} />
       </main>
 
       <MyFooter />
