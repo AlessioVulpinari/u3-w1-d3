@@ -26,8 +26,8 @@ class BookList extends Component {
         </InputGroup>
 
         <Row className='row-cols-xl-4 row-cols-md-3 row-cols-sm-2 row-cols-1'>
-          {this.state.array.map((book) => {
-            return SingleBooks(book)
+          {this.state.array.map((book, i) => {
+            return <SingleBooks bookIns={book} key={"Book-" + i} />
           })}
         </Row>
       </Container>
